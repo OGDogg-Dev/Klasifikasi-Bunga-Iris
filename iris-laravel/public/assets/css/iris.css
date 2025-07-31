@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f8f8f8;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 100%;
+    margin: auto;
+}
+
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* Form input lebih kecil */
+.form-section {
+    flex: 0 0 12%;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Output lebih lebar */
+.result-section {
+    flex: 1;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    min-width: 300px;
+    overflow-x: auto;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+label {
+    font-size: 13px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.tabel {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.tabel th, .tabel td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Gambar bunga */
+.image-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 180px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+/* Teks hasil prediksi */
+.prediksi-text {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Responsif untuk tablet & mobile */
+@media screen and (max-width: 768px) {
+    .flex-box {
+        flex-direction: column;
+    }
+
+    .form-section, .result-section {
+        max-width: 100%;
+    }
+
+    .form-section {
+        flex: none;
+    }
+
+    .image-container img {
+        max-height: 150px;
+    }
+}
